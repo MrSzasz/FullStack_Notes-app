@@ -8,7 +8,5 @@ const PORT = process.env.PORT
 // Server Init
 
 app.listen(PORT, () => {
-  console.log(
-    `server running on ${process.env.ENV_BASE_URL}${process.env.PORT}`,
-  )
+  console.log(`server running on http://localhost:${process.env.PORT}`)
 })

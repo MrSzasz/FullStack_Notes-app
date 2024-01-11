@@ -1,7 +1,7 @@
 import { spec, request } from 'pactum'
 
 describe('notes', async () => {
-  request.setBaseUrl(`${process.env.ENV_BASE_URL}${process.env.PORT}`)
+  request.setBaseUrl(`http://localhost:${process.env.PORT}`)
 
   describe('GET /api/notes -- Get notes', () => {
     // Get all notes
