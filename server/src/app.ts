@@ -12,11 +12,6 @@ app.use(express.urlencoded({ extended: true }))
 
 // Routes
 
-// ===== ROOT =====
-app.get('/', (_req, res) => {
-  res.json({ message: 'working' })
-})
-
 // ===== NOTES =====
 app.use('/api/notes', notesRoutes)
 
