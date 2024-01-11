@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { spec, request } from 'pactum'
 
 describe('notes', async () => {
