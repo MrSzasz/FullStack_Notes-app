@@ -2,7 +2,7 @@
 
 Simplify your note-taking routine with this clean and minimalist application. Utilizing a local database, we offer an uncomplicated and streamlined approach to creating, editing, and organizing your notes. Experience simplicity at its best.
 
-![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white) ![Vitest](https://img.shields.io/badge/VITEST-6E9F18?style=for-the-badge&logo=vitest&logoColor=FDB515) ![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white) ![PNPM](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white) ![ESLint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white) ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![LowDB](https://img.shields.io/badge/LowDB-gray?style=for-the-badge)
+[![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/) [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![Shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/) [![Vitest](https://img.shields.io/badge/VITEST-6E9F18?style=for-the-badge&logo=vitest&logoColor=FDB515)](https://vitest.dev/) [![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/) [![PNPM](https://img.shields.io/badge/pnpm-yellow?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io/) [![ESLint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/) [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en) [![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)](https://expressjs.com/) [![LowDB](https://img.shields.io/badge/LowDB-gray?style=for-the-badge)](https://www.npmjs.com/package/lowdb)
 
 ## Table of Contents
 
@@ -68,9 +68,9 @@ pnpm dev
 ## Usage
 
 Open your browser and navigate to `http://localhost:3000` to access the app.
-Click on the + button to create a new note, then save it.
-Now you can edit and delete the note clicking the note itself, if you want to edit just edit the text and save it, if you want to delete it just click on _Delete note_.
-You can find your note typing some text inside it on the search bar.
+Click on the `+` button to create a new note, then save it.
+Now, you can edit and delete the note by clicking on the note itself. If you want to edit, just modify the text and save it. If you want to delete it, click on `Delete note`.
+You can find your note by typing some text inside the search bar.
 
 ## API Endpoints
 
@@ -83,7 +83,7 @@ You can find your note typing some text inside it on the search bar.
 
 ## Tests
 
-This app uses Vitest for the Backend and the Frontend, and Cypress for E2E in the Frontend.
+This app utilizes Vitest for both the backend and the frontend, along with Cypress for end-to-end testing in the frontend.
 
 ### Prerequisites
 
