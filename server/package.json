@@ -3,7 +3,7 @@
   "author": "Tomás Lugo",
   "version": "1.0.0",
   "description": "A minimalist note-taking app built with Node.js, TypeScript, and Express.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "keywords": [
     "note-taking",
