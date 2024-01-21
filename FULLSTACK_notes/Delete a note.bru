@@ -1,0 +1,21 @@
+meta {
+  name: Delete a note
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{NOTES_URL}}
+  body: json
+  auth: none
+}
+
+headers {
+  x-auth-id: testID
+}
+
+body:json {
+  {
+    "id": "ebb3f2ac-0e0d-4249-af1a-65cde34d6608"
+  }
+}

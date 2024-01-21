@@ -1,5 +1,13 @@
 {
-  "watch": ["src"],
+  "watch": [
+    "src",
+    "services",
+    "./services",
+    "/services",
+    "/server/services",
+    "/server/services/**",
+    "/server/services**"
+  ],
   "ext": ".ts,.js",
   "ignore": ["db.json", "__TESTS__/"],
   "exec": "ts-node ./src/index.ts"

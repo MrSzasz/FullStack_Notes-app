@@ -4,5 +4,7 @@ import {
 } from 'vitest/config'
 
 export default defineConfig({
-  test: {},
+  test: {
+    setupFiles: ['dotenv/config']
+  },
 })

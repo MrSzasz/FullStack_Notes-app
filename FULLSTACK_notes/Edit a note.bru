@@ -1,0 +1,23 @@
+meta {
+  name: Edit a note
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{NOTES_URL}}
+  body: json
+  auth: none
+}
+
+headers {
+  x-auth-id: testID
+}
+
+body:json {
+  {
+    "id": "3e878232-bc72-48ab-ac2c-784489581fdb",
+    "title": "edited test note title",
+    "content": "edited test note content"
+  }
+}

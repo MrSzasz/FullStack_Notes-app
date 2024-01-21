@@ -1,6 +1,6 @@
 import type { notesType } from '../types/dict'
 
-function isNote(note: object | notesType): note is notesType {
+const isNote = (note: object | notesType): note is notesType => {
   return (note as notesType).id !== undefined
 }
 

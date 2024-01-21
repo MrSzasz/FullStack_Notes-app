@@ -3,3 +3,8 @@ export interface notesType {
   title: string
   content: string
 }
+
+export interface userData {
+  email: string
+  password: string
+}

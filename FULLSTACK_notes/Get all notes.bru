@@ -1,0 +1,15 @@
+meta {
+  name: Get all notes
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{NOTES_URL}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-auth-id: testID
+}

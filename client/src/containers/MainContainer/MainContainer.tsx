@@ -12,6 +12,7 @@ import SearchNote from '@/components/SearchNote/SearchNote'
 import DialogNote from '@/components/DialogNote/DialogNote'
 import NoteCard from '@/components/NoteCard/NoteCard'
 import { ToggleTheme } from '@/components/ToggleTheme/ToggleTheme'
+import type { notesType } from '@/types/notes'
 
 const MainContainer = (): React.ReactElement => {
   const [filterValue, setFilterValue] = useState<string>('')
@@ -21,7 +22,7 @@ const MainContainer = (): React.ReactElement => {
 
   const [parent] = useAutoAnimate()
 
-  if (isError !== null) return <ErrorComponent />
+  if (isError !== null && isError !== undefined) return <ErrorComponent />
 
   return (
     <>
@@ -42,20 +43,20 @@ const MainContainer = (): React.ReactElement => {
           ) : (
             notes
               .filter(note => {
-                if (filterValue === '') {
-                  return note
-                } else if (
-                  note.title.toLowerCase().includes(filterValue.toLowerCase())
-                ) {
-                  return note
-                } else if (
-                  note.content.toLowerCase().includes(filterValue.toLowerCase())
-                ) {
-                  return note
-                }
-                return false
+                const filterString = filterValue.toLowerCase()
+                const titleIncludesFilter = note.title
+                  .toLowerCase()
+                  .includes(filterString)
+                const contentIncludesFilter = note.content
+                  .toLowerCase()
+                  .includes(filterString)
+                return (
+                  filterValue === '' ||
+                  titleIncludesFilter ||
+                  contentIncludesFilter
+                )
               })
-              .map(note => (
+              .map((note: notesType) => (
                 <DialogNote
                   note={note}
                   handleDeleteNoteFn={handleDeleteNote}
