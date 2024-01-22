@@ -11,7 +11,11 @@
     "Express",
     "React",
     "TypeScript",
-    "Markdown"
+    "Markdown",
+    "auth0",
+    "SQL",
+    "vitest",
+    "MySQL"
   ],
   "scripts": {
     "test": "vitest",

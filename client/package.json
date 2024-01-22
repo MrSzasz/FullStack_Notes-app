@@ -9,7 +9,9 @@
     "NextJS",
     "React",
     "Tailwind",
-    "TypeScript"
+    "TypeScript",
+    "auth0",
+    "Radix"
   ],
   "scripts": {
     "dev": "next dev",
