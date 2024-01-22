@@ -92,7 +92,7 @@ export const createNote = async (
           // ),
           'x-auth-id': `Bearer ${userId}`,
         },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify(noteForBody),
       })
 
@@ -160,7 +160,7 @@ export const editNote = async (
           // ),
           'x-auth-id': `Bearer ${userId}`,
         },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify(noteForBody),
       })
 
@@ -228,7 +228,7 @@ export const deleteNote = async (
           // ),
           'x-auth-id': `Bearer ${userId}`,
         },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify({ id }),
       })
 
