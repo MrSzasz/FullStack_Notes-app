@@ -29,7 +29,7 @@ export const getNotes = async (
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': String(process.env.URL_ORIGIN_FOR_CORS),
         'x-auth-id': `Bearer ${userId}`,
       },
     })
@@ -87,7 +87,9 @@ export const createNote = async (
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': String(
+            process.env.URL_ORIGIN_FOR_CORS,
+          ),
           'x-auth-id': `Bearer ${userId}`,
         },
         credentials: 'include',
@@ -153,7 +155,9 @@ export const editNote = async (
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': String(
+            process.env.URL_ORIGIN_FOR_CORS,
+          ),
           'x-auth-id': `Bearer ${userId}`,
         },
         credentials: 'include',
@@ -219,7 +223,9 @@ export const deleteNote = async (
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': String(
+            process.env.URL_ORIGIN_FOR_CORS,
+          ),
           'x-auth-id': `Bearer ${userId}`,
         },
         credentials: 'include',
