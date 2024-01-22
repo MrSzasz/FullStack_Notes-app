@@ -1,1 +1,9 @@
 dist
+components/ui*
+components/ui/*
+/components/ui/*
+/components/ui*
+components/ui*
+components/ui/*.ts
+/components/ui/*.ts
+/components/ui*
