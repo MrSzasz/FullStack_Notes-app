@@ -37,6 +37,7 @@ const SearchNote = ({
         ) : (
           <button
             className="pointer-events-auto flex justify-center items-center"
+            title="Clear search input"
             onClick={() => {
               handleClear()
             }}
@@ -45,7 +46,6 @@ const SearchNote = ({
           </button>
         )}
       </div>
-      <span>{}</span>
     </div>
   )
 }

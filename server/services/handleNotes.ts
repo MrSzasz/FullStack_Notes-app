@@ -2,10 +2,10 @@ import { pool } from '../src/db'
 import type { notesType } from '../types/dict'
 
 /**
- * Retrieves all notes for a specific user from the database.
+ * Retrieves all notes for a given user.
  *
- * @param {string} userId - The ID of the user whose notes are to be retrieved.
- * @return {Promise<notesType[] | []>} The retrieved notes or an empty array.
+ * @param {string} userId - The ID of the user
+ * @return {Promise<notesType[] | []>} The array of notes or an empty array
  */
 export const getAllNotes = async (
   userId: string,
@@ -28,25 +28,12 @@ export const getAllNotes = async (
   }
 }
 
-// TODO => delete this block
-// export const getOneNote = async (id: string): Promise<notesType> => {
-//   try {
-//     const [row]: any = await pool.query('select * from notes where id = ?', [
-//       id,
-//     ])
-
-//     return row
-//   } catch (error) {
-//     throw new Error('Note not found')
-//   }
-// }
-
 /**
- * Creates a note for a given user.
+ * Asynchronously creates a note for a specific user in the database.
  *
  * @param {notesType} note - the note to be created
  * @param {string} userId - the ID of the user
- * @return {Promise<notesType>} the created note
+ * @return {Promise<notesType | undefined>} the created note, or undefined if an error occurred
  */
 export const createNote = async (
   note: notesType,
@@ -65,11 +52,11 @@ export const createNote = async (
 }
 
 /**
- * Updates a note for a given user.
+ * Updates a note for a specific user.
  *
  * @param {notesType} noteForUpdate - the note to be updated
  * @param {string} userId - the ID of the user
- * @return {Promise<notesType | Error>} the updated note or an error if the note is not found
+ * @return {Promise<notesType | Error>} the updated note or an error if not found
  */
 export const updateNote = async (
   noteForUpdate: notesType,
@@ -92,7 +79,7 @@ export const updateNote = async (
  *
  * @param {string} noteId - The ID of the note to be deleted
  * @param {string} userId - The ID of the user who owns the note
- * @return {Promise<notesType | Error>} The deleted note or an Error if the note is not found
+ * @return {Promise<notesType | Error>} The deleted note or an error if the note is not found
  */
 export const deleteNote = async (
   noteId: string,
