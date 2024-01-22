@@ -1,15 +1,15 @@
 meta {
   name: Get all notes
   type: http
-  seq: 2
+  seq: 1
 }
 
 get {
-  url: {{NOTES_URL}}
+  url: {{BASE_URL}}
   body: none
   auth: none
 }
 
 headers {
-  x-auth-id: testID
+  x-auth-id: Bearer testID
 }

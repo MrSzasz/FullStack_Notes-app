@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { spec, request } from 'pactum'
+import 'dotenv/config'
 
 describe('notes', async () => {
   request.setBaseUrl(`http://localhost:${process.env.PORT ?? 5002}`)
