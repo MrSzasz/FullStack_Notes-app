@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import notesRoutes from './routes/notes/notes.routes'
+import 'dotenv/config'
 
 const app = express()
 
@@ -9,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.URL_ORIGIN,
     credentials: true,
   }),
 )
