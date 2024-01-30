@@ -22,7 +22,7 @@ const SearchNote = ({
   }
 
   return (
-    <div className="md:col-start-2 col-span-3 w-10/12 mx-auto md:mx-0 md:w-full md:col-span-1 relative flex items-center group">
+    <div className="md:col-start-2 col-span-3 w-9/14 mx-auto md:mx-0 md:w-full md:col-span-1 relative flex items-center group">
       <Input
         ref={searchInput}
         placeholder="Search notes..."

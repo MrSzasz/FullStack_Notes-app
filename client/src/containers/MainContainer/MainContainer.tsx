@@ -36,7 +36,7 @@ const MainContainer = (): React.ReactElement => {
             <LoadingComponent />
           ) : notes.length === 0 ? (
             <div className="grid place-items-center w-full text-2xl font-bold h-[80vh]">
-              <p className="w-full h-full grid place-content-center text-xl md:text-2xl font-bold">
+              <p className="w-full h-full grid place-content-center text-xl md:text-2xl font-bold text-center md:text-start">
                 No notes yet, click the + button to add one
               </p>
             </div>
